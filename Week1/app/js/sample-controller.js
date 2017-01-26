@@ -32,13 +32,4 @@ angular.module('app')
 
       return totalValue;
     }
-
-    $scope.$watch('cart', function(){
-      $scope.total = $scope.cart.reduce(function (previous, current) {
-        return previous + current.cost;
-      }, 0);
-    });
-
-
-
   }]);
