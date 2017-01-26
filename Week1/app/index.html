@@ -10,13 +10,16 @@
 </head>
 <body>
 <h2>Lecture 2</h2>
-<p>
-    This project has been bootstraped out to include angular and a local development server
-</p>
-<p>2 + 2 = {{2 + 2}}</p>
 
 <div ng-controller="SampleController">
-    {{title}}
+        <h2>Costs</h2>
+        <div ng-repeat="book in books | orderBy:'-cost'">
+            <p>Name: {{book.name}}</p>
+            <p>Cost: {{book.cost}}</p>
+            <button ng-click="addToCart(book)">Add to Cart</button>
+        </div>
+        <h2>Total</h2>
+        <p>Total of cart: {{total()}}</p>
 </div>
 </body>
 </html>
