@@ -11,18 +11,3 @@ h2 {
 	background-color: pink;
 	color: white;
 }
-
-h3 {
-	text-decoration: underline;
-}
-
-#product_list, #books_list {
-	width: 33%;
-	float: left;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.clear {
-	clear: both;
-}
