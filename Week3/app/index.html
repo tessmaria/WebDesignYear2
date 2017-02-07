@@ -12,8 +12,13 @@
 </head>
 
 <body>
-    <div ng-controller="WeekThreeController">
-        <h2>{{weekThreeTitle}}</h2>
+    <div ng-controller="ParentController">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+        	<div ng-controller="ChildCtrl">
+        		<h2>{{ title }}</h2>
+        		<p> {{ description }} </p>
+        	</div>
     </div>
 </body>
 </html>
