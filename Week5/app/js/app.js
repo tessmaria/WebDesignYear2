@@ -3,15 +3,30 @@ var app = angular.module('app',['ui.router'])
   var helloState = {
     name: 'hello',
     url: '/hello',
-    template: '<h3>hello world!</h3>'
+    templateUrl: '../hello.html'
   }
 
   var aboutState = {
     name: 'about',
     url: '/about',
-    template: '<h3>Its the UI-Router hello world app!</h3>'
+    templateUrl: '../about.html'
+    }
+
+  var contactState = {
+    name: 'contact',
+    url: '/contact',
+    templateUrl: '../contact.html'
   }
+
+    var blogState = {
+      name: 'blog',
+      url: '/blog',
+      templateUrl: '../blog.html',
+    }
+
 
   $stateProvider.state(helloState);
   $stateProvider.state(aboutState);
+  $stateProvider.state(contactState);
+  $stateProvider.state(blogState);
 });
