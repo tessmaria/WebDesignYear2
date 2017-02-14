@@ -12,6 +12,14 @@ var app = angular.module('app',['ui.router'])
     template: '<h3>Its the UI-Router hello world app!</h3>'
   }
 
+  var contactState = {
+    name: 'contact',
+    url: '/contact',
+    templateURL: "../states/contact.html"
+  }
+
+
   $stateProvider.state(helloState);
   $stateProvider.state(aboutState);
+  $stateProvider.state(contactState);
 });
