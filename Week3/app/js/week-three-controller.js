@@ -10,8 +10,3 @@ app.controller('ChildCtrl', ['$scope', function($scope) {
 }]);
 
 
-app.controller('MainController', ['$scope', 'phones', function($scope, phones) {
-	forecast.success(function(data) {
-		$scope.manyPhones = data;
-	});
-}])
