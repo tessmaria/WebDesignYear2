@@ -33,7 +33,7 @@
 		 		<h3> {{ title }} </h3>
 		 		<ul>
 		 			<li ng-repeat="phone in phones">
-		 				{{ phone.name }}
+		 				<p> {{ phone.name }} </p>
 		 			</li>
 		 		</ul> 
 		 	</div>
@@ -42,6 +42,12 @@
 		 <h2> Exercise 3 </h2>
 		 	<div ng-controller="ImageController">
 		 		<h3> {{ title }} </h3>
+		 			<ul>
+		 				<li ng-repeat="picture in pictures">
+		 					<img ng-src="{{picture.webformatURL}}"/>
+
+		 				</li>
+		 			</ul>
 		 	</div>
 </body>
 </html>
