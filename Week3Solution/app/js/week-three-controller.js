@@ -1,4 +1,4 @@
-angular.module('app')
+bhangular.module('app')
 .controller('WeekThreeController', ['$scope','$http', function($scope, $http) {
 
   $scope.phones = undefined;
